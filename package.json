@@ -1,0 +1,54 @@
+{
+  "name": "huml-vscode",
+  "displayName": "HUML language support",
+  "description": "Syntax highlighting for HUML (Human-Readable Markup Language)",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:huml"
+  ],
+  "keywords": [
+    "huml",
+    "markup",
+    "data",
+    "configuration",
+    "config"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "huml",
+        "aliases": [
+          "HUML",
+          "huml"
+        ],
+        "extensions": [
+          ".huml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "huml",
+        "scopeName": "source.huml",
+        "path": "./syntaxes/huml.tmLanguage.json"
+      }
+    ]
+  },
+  "main": "./extension.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huml-lang/huml-vscode"
+  },
+  "license": "MIT",
+  "publisher": ""
+}
