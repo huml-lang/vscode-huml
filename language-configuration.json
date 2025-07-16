@@ -22,7 +22,8 @@
     "markers": {
       "start": "^\\s*.*::\\s*(#.*)?$",
       "end": "^\\s*$"
-    }
+    },
+    "offSide": true
   },
   "wordPattern": "[a-zA-Z0-9_-]+",
   "indentationRules": {
